@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator MicroService</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Average Calculator MicroService</h1>
+    <div class="formstyle">
+        <form name="form1">
+            <input id="calc" type="text" name="answer" readonly>
+            <br>
+            <div class="buttons-container">
+                <input type="button" value="1" onclick="appendToCalc('1')">
+                <input type="button" value="2" onclick="appendToCalc('2')">
+                <input type="button" value="3" onclick="appendToCalc('3')">
+                <input type="button" value="+" onclick="appendToCalc('+')">
+                <input type="button" value="4" onclick="appendToCalc('4')">
+                <input type="button" value="5" onclick="appendToCalc('5')">
+                <input type="button" value="6" onclick="appendToCalc('6')">
+                <input type="button" value="-" onclick="appendToCalc('-')">
+                <input type="button" value="7" onclick="appendToCalc('7')">
+                <input type="button" value="8" onclick="appendToCalc('8')">
+                <input type="button" value="9" onclick="appendToCalc('9')">
+                <input type="button" value="/" onclick="appendToCalc('/')">
+                <input type="button" value="0" onclick="appendToCalc('0')">
+                <input type="button" value="." onclick="appendToCalc('.')">
+                <input type="button" value="=" onclick="calculateResult()">
+            </div>
+            <input type="button" value="Clear All" onclick="clearCalc()" id="clear">
+            <div class="extra-functions">
+                <input type="button" value="Fibonacci" onclick="calculateFibonacci()">
+                <input type="button" value="Even" onclick="checkEven()">
+                <input type="button" value="Prime" onclick="checkPrime()">
+                <input type="button" value="Random" onclick="generateRandom()">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
